@@ -1,6 +1,21 @@
 ### Let's take a look at how the normal React components talk:
 
-***APage***: Ok, I now create you, TabContainer and here is your list of tabs: [{ label: "Users", component: UserListComponent }, {label: "Activities" ...} ...]. That's it, you had all you need, from now on you are on your own and don't ever call me back (callback), I need to handle other important business.
+***APage***: Ok, I now create you, TabContainer and here is your list of tabs:
+```
+[
+    {
+        label: "Users",
+        component: UserListComponent
+    },
+    {
+        label: "Activities"
+        ...
+    }
+    ...
+]
+```
+
+. That's it, you had all you need, from now on you are on your own and don't ever call me back (callback), I need to handle other important business.
 
 ***TabContainer***: Ok dad, got it. Trust me I can do it all by myself and won't disturb you ever.
 
@@ -8,7 +23,21 @@
 
 ### Now, let's take a look at how the components in Redux talk:
 
-***APage***: Ok, I now create you, TabContainer and here is your list of tabs: [{ label: "Users", component: "USER_LIST" }, {label: "Activities" ...} ...]. That's it, don't ever call me back...
+***APage***: Ok, I now create you, TabContainer and here is your list of tabs:
+```
+[
+    {
+        label: "Users",
+        component: "USER_LIST"
+    },
+    {
+        label: "Activities"
+        ...
+    }
+    ...
+]
+```
+. That's it, don't ever call me back...
 
 ***TabContainer***: Ok dad, I don't think I will need anything else from you, but I will need God (Redux) for many thing else.
 
